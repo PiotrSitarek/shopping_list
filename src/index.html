@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MDB Webpack Starter</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/index.min.css" />
+    <!-- Custom styles -->
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Start your project here-->
+    <div class="app_container">
+      <h1>Shopping List</h1>
+      <div class="shoppinglist_container">
+        <div class="addProduct_container">
+          <p>Add product</p>
+          <form class="form_positioner">
+            <label for="productName">Product name:</label>
+            <input type="text" id="productName" class="inputsCSS" />
+
+            <label for="productQuantity">Quantity:</label>
+            <input type="number" id="productQuantity" step="0.1" class="inputsCSS" />
+            <div class="quantityContainer">
+              <input type="radio" name="converting" value="weight" class="radioCheckboxes" />
+              <label for="weight">weight (kg):</label>
+            </div>
+            <div class="quantityContainer">
+              <input type="radio" name="converting" value="piece" class="radioCheckboxes" />
+              <label for="piece">piece:</label>
+            </div>
+            <select class="inputsCSS" required="required">
+              <option value="vegetables" class="selectOptions">vegetables</option>
+              <option value="fruits" class="selectOptions">fruits</option>
+              <option value="bread" class="selectOptions">bread</option>
+              <option value="dairy" class="selectOptions">dairy</option>
+              <option value="meat" class="selectOptions">meat</option>
+              <option value="other" class="selectOptions">other</option>
+            </select>
+            <button class="app_form--button" type="submit">Add product</button>
+          </form>
+        </div>
+        <div class="listInfo_container">
+          <p class="listHeader">Shopping list:</p>
+          <div class="vegetableList">Vegetables:</div>
+          <div class="fruitList">Fruits:</div>
+          <div class="breadtList">Bread:</div>
+          <div class="diaryList">Dairy:</div>
+          <div class="meatList">Meat:</div>
+          <div class="otherList">Other:</div>
+          <div class="thingsToBuy">
+            Number of things to buy:
+            <p class="numberOfThings listElementStyle"></p>
+          </div>
+          <p class="deleteInfo">You can delete list element by click on it!</p>
+        </div>
+      </div>
+    </div>
+    <!-- End your project here-->
+  </body>
+  <!-- Main js file -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</html>
