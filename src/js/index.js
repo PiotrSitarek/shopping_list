@@ -23,7 +23,9 @@ const ListRender = () => {
           const listElement = document.createElement('p');
           listElement.classList.add('listElementStyle');
           vegetableList.appendChild(listElement);
-          listElement.innerHTML = doc.data().productName;
+          listElement.innerHTML = `${doc.data().productName} ${doc.data().productQuantity} ${
+            doc.data().productConvert
+          }`;
           listElement.addEventListener('click', (event) => {
             event.preventDefault();
             firebase
@@ -39,7 +41,9 @@ const ListRender = () => {
           const listElement = document.createElement('p');
           listElement.classList.add('listElementStyle');
           fruitList.appendChild(listElement);
-          listElement.innerHTML = doc.data().productName;
+          listElement.innerHTML = `${doc.data().productName} ${doc.data().productQuantity} ${
+            doc.data().productConvert
+          }`;
           listElement.addEventListener('click', (event) => {
             event.preventDefault();
             firebase
@@ -55,7 +59,9 @@ const ListRender = () => {
           const listElement = document.createElement('p');
           listElement.classList.add('listElementStyle');
           breadList.appendChild(listElement);
-          listElement.innerHTML = doc.data().productName;
+          listElement.innerHTML = `${doc.data().productName} ${doc.data().productQuantity} ${
+            doc.data().productConvert
+          }`;
           listElement.addEventListener('click', (event) => {
             event.preventDefault();
             firebase
@@ -71,7 +77,9 @@ const ListRender = () => {
           const listElement = document.createElement('p');
           listElement.classList.add('listElementStyle');
           diaryList.appendChild(listElement);
-          listElement.innerHTML = doc.data().productName;
+          listElement.innerHTML = `${doc.data().productName} ${doc.data().productQuantity} ${
+            doc.data().productConvert
+          }`;
           listElement.addEventListener('click', (event) => {
             event.preventDefault();
             firebase
@@ -87,7 +95,9 @@ const ListRender = () => {
           const listElement = document.createElement('p');
           listElement.classList.add('listElementStyle');
           meatList.appendChild(listElement);
-          listElement.innerHTML = doc.data().productName;
+          listElement.innerHTML = `${doc.data().productName} ${doc.data().productQuantity} ${
+            doc.data().productConvert
+          }`;
           listElement.addEventListener('click', (event) => {
             event.preventDefault();
             firebase
@@ -103,7 +113,9 @@ const ListRender = () => {
           const listElement = document.createElement('p');
           listElement.classList.add('listElementStyle');
           otherList.appendChild(listElement);
-          listElement.innerHTML = doc.data().productName;
+          listElement.innerHTML = `${doc.data().productName} ${doc.data().productQuantity} ${
+            doc.data().productConvert
+          }`;
           listElement.addEventListener('click', (event) => {
             event.preventDefault();
             firebase
